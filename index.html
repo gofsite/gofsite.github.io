@@ -5,41 +5,149 @@
 <title>แหล่งท่องเที่ยวในชัยภูมิ</title>
 <style type="text/css">
 body {
-	background-image: url(img/bg2.jpeg);
+	background-image: url(img/bg4.jpg);
 }
 body,td,th {
 	color: #000;
 }
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f7f0e8;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #f4e7d7;
+    color: hotpink;
+    }
+	.column {
+    float: left;
+    padding: 10px;
+}
+.column.side {
+    width: 25%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+.button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+	float: left;
+}
+.btn-group .button:hover {
+    background-color: #F63;
+}
+.footer {
+    background-color: #3C9;
+    padding: 2px 2px;
+    text-align: center;
+	font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }	
+img {
+    border-radius: 8px;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 </style>
 </head>
 
 <body>
-<div align="center"><img src="img/11.jpg" width="100%" height="188" alt="bann" /></div>
 
-  <div align="center">
-    <p>&nbsp;</p>
-    <table width="650" height="260" border="0">
-      <tr>
-        <td width="288" height="51" bgcolor="#33FF00"><div align="center"><a href="tadton.html"><i>อุทยานแห่งชาติน้ำตกตาดโตน</i></a></div></td>
-        <td width="295" bgcolor="#FF9900"><div align="center"><a href="zoo.html"><i>เขตรักษาพันธุ์สัตว์ป่าภูเขียว</i></a></div></td>
-      </tr>
-      <tr>
-        <td height="43" bgcolor="#33FF33"><div align="center"><a href="phahin.html"><i>อุทยานแห่งชาติป่าหินงาม</i></a></div></td>
-        <td bgcolor="#FF9966"><div align="center"><a href="pangkhu.html"><i>ปรางค์กู่</i></a></div></td>
-      </tr>
-      <tr>
-        <td bgcolor="#33FF66"><div align="center"><a href="saitong.html"><i>อุทยานแห่งชาติไทรทอง</i></a></div></td>
-        <td bgcolor="#FF9999"><div align="center"><a href="phakerng.html"><i>ผาเกิ้ง</a></i></div></td>
-      </tr>
-      <tr>
-        <td height="50" bgcolor="#33FF99"><div align="center"><a href="morhinkao.html"><i>มอหินขาว</i></a></div></td>
-        <td bgcolor="#FF99CC"><div align="center"><a href="flower.html"><i>ทุ่งดอกกระเจียว</i></a></div></td>
-      </tr>
-      <tr>
-        <td height="61" bgcolor="#33FFCC"><div align="center"><a href="jura.html"><i>เขื่อนจุฬาภรณ์</i></a></div></td>
-        <td bgcolor="#FF99FF"><div align="center"><a href="sema.html"><i>ใบเสมาบ้านกุดโง้ง</i></a></div></td>
-      </tr>
-    </table>
+<div align="center"><img src="img/bn1.jpg" width="100%" height="150" alt="bann" /></div>
+<div class="topnav">
+  <a href="index.html">หน้าแรก</a>
+  <a href="https://www.google.co.th">
+  <img border="0" alt="Google" src="img/gg.png" width="20" height="20"></a>
+  
+  <a href="https://www.youtube.com/">
+  <img border="0" alt="Youtube" src="img/yt.png" width="20" height="20"></a>
+  
+  <a href="https://www.facebook.com/">
+  <img border="0" alt="Facebook" src="img/fb.png" width="20" height="20"></a>
+  
+  <a href="https://line.me/th/">
+  <img border="0" alt="Line" src="img/li.png" width="20" height="20"></a>
 </div>
+<div class="btn-group">
+<a href="flower.html" class="button">ทุ่งดอกกระเจียว </a>
+<a href="tadton.html" class="button">น้ำตกตาดโตน </a>
+<a href="morhinkao.html" class="button">มอหินขาว </a>
+<a href="saitong.html" class="button">น้ำตกไทรทอง </a>
+<a href="phakerng.html" class="button">ผาเกิ้ง </a>
+<a href="zoo.html" class="button">เขตรักษาพันธุ์สัตว์ป่าภูเขียว </a>
+<a href="pangkhu.html" class="button">ปรางค์กู่ </a>
+<a href="jura.html" class="button">เขื่อนจุฬาภรณ์</a>
+<a href="phahin.html" class="button">ป่าหินงาม</a>
+<a href="phuking.html" class="button">ภูคิ้ง</a>
+</div>
+
+<div class="row">
+  
+  <div class="column middle">
+    <h2>แนะนำที่เที่ยวเมืองชัยภูมิ</h2>
+    <p> <strong><a target="_blank" href="https://travel.kapook.com/view15789.html">ที่เที่ยวชัยภูมิ</a> มีสถานที่ท่องเที่ยวมากมาย ทั้ง ทุ่งดอกกระเจียว จ.ชัยภูมิ ปรางค์กู่ มอหินขาว ภูคิ้ง และอื่น ๆ อีกมากมาย  </strong></p>
+    <div><strong><br />
+      </strong>          นี่คือคำขวัญของจังหวัดที่ขึ้นชื่อว่ามีสถานที่ท่องเที่ยวแจ่ม ๆ เจ๋ง ๆ อันดับต้น ๆ ของเมืองไทย ใช่แล้ว! เรากำลังเอ่ยถึง&quot;ชัยภูมิ&quot; จังหวัดที่มีพื้นที่ใหญ่เป็นอันดับ 7 ของประเทศ เป็นอันดับที่ 3 ของภาคตะวันออกเฉียงเหนือบ้านเฮา ที่สำคัญ ชัยภูมิ ไม่ได้มีดีแค่ความใหญ่เท่านั้น เมืองนี้ยังมีเรื่องราวประวัติศาสตร์ก่อเกิดขึ้นมากมาย และวันนี้กระปุกดอทคอมจะพาเพื่อน ๆ ไปเปิดประตูทำความรู้จักกับ ชัยภูมิ ให้มากกว่าเดิมกัน<br />
+      <br />
+      จังหวัดชัยภูมิ นับเป็นที่ตั้งของแหล่งอารยธรรมอันเก่าแก่นับตั้งแต่สมัยทวารวดี สมัยขอม กระทั่งสมัยที่ได้รับอิทธิพลจากอาณาจักรล้านช้าง มีการค้นพบโบราณสถานและโบราณวัตถุมากมายในหลายพื้นที่ของจังหวัด ต่อมาปรากฏชื่อเป็นเมืองหน้าด่านในสมัยกรุงศรีอยุธยา ในรัชกาลสมเด็จพระนารายณ์มหาราช โดยมีฐานะเป็นเมืองขึ้นของเมืองนครราชสีมา คู่กับเมืองบุรีรัมย์ ภายหลังจึงร้างไป</div>
+  </div>
+</div>  
+<p><h3>สถานที่แนะนำ</h3></p>
+<div class="pagination">
+  <a href="index.html">&laquo;</a>
+  <a href="flower.html">1</a>
+  <a href="tadton.html">2</a>
+  <a href="morhinkao.html">3</a>
+  <a href="phuking.html">4</a>
+  <a href="phahin.html">5</a>
+  <a href="index.html">&raquo;</a>
+</div>
+
+
 </body>
+<div class="footer">
+  <p>copyright</p>
+</div>
 </html>
