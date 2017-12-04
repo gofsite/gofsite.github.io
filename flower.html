@@ -11,13 +11,16 @@ img {
     border-radius: 50%;
 }
 div1 {
-    width: 300px;
+    width: 100px;
     height: 100px;
-    background-color:#CCC;
-    border: 1px solid black;
-    -ms-transform: translate(50px,100px); /* IE 9 */
-    -webkit-transform: translate(50px,100px); /* Safari */
-    transform: translate(50px,100px); /* Standard syntax */
+    background: red;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+div1:hover {
+    width: 300px;
+    height: 300px;
 }
 .button {
     background-color: #f4511e;
