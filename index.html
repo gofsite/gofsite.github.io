@@ -91,12 +91,12 @@ img {
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
-#borderimg {
-border: 10px solid transparent;
-padding: 15px;
-border-image: url(border.png) 30 round;
-border-image: url(border.png) 30 round;
-border-image: url(border.png) 30 round;
+#borderimg { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 stretch; 
+    -o-border-image: url(border.png) 30 stretch;
+    border-image: url(border.png) 30 stretch;
 }
 </style>
 </head>
