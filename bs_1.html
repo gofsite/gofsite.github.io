@@ -1,0 +1,108 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>page1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">B</button>
+  <button type="button" class="btn btn-danger">o</button>
+  <button type="button" class="btn btn-light">o</button>
+<button type="button" class="btn btn-primary">t</button>
+<button type="button" class="btn btn-primary">s</button>
+<button type="button" class="btn btn-primary">t</button>
+<button type="button" class="btn btn-light">r</button>
+<button type="button" class="btn btn-danger">a</button>
+<button type="button" class="btn btn-danger">p</button>
+</div>
+  <br><p>Tutorial!</p> 
+</div>
+  <p><b>แท็กBreadcrumbs</b></p>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="bs.html" data-toggle="tooltip" title="กลับไปยังหน้าแรก">หน้าแรก</a></li>
+    <li class="breadcrumb-item"><a href="bs_2.html">Italy</a></li>
+    <li class="breadcrumb-item active">OMG</li><br>
+  </ul>
+<b>แท็ก List Group</b>
+<ul class="list-group">
+    <li class="list-group-item active">Active item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+  <br>
+  
+ <h3>แท็ก Tooltip Example</h3>//ข้อความขึ้นตอนแตะ
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+  </div>
+     <script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+
+
+
+<div class="container">
+<br><h2>แท็ก  Simple Collapsible</h2>
+<a href="#demo" class="btn btn-primary" data-toggle="collapse">อ่านเพิ่มเติม</a>
+<div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+</div>
+
+<br><h2>แท็ก Nav</h2>
+  <p>Basic horizontal menu:</p>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+<b>แท็กCards</b>
+ <div class="card">
+    <div class="card-body">ว่างเปล่า</div>
+  </div>
+  <br>
+  <div class="card bg-primary text-white">
+    <div class="card-body">สีน้ำเงิน</div>
+  </div>
+  <br>
+  <div class="card bg-warning text-white">
+    <div class="card-body">สีเหลือง</div>
+  </div>
+  <br>
+  <div class="card bg-danger text-white">
+    <div class="card-body">สีแดง</div>
+  </div>
+  <br>
+
+</body>
+<ul class="pagination" align="center">
+    <li class="page-item"><a class="page-link" href="bs.html">หน้าแรก</a></li>
+    <li class="page-item active"><a class="page-link" href="bs_1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="bs_2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="bs_3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="bs.html">Next</a></li>
+  </ul>
+</html>

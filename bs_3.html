@@ -1,0 +1,100 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>page1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <style>
+  .carousel-inner img {
+      width: 50%;
+      height: 50%;
+  }
+
+ body {
+    background-color: #ffcc00;
+}
+  </style>
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<div class="btn-group">
+  <button type="button" class="btn btn-danger"><h1>T</h1></button>
+  <button type="button" class="btn btn-danger"><h1>h</h1></button>
+  <button type="button" class="btn btn-light"><h1>a</h1></button>
+<button type="button" class="btn btn-primary"><h1>i</h1></button>
+<button type="button" class="btn btn-primary"><h1>l</h1></button>
+<button type="button" class="btn btn-light"><h1>a</h1></button>
+<button type="button" class="btn btn-danger"><h1>n</h1></button>
+<button type="button" class="btn btn-danger"><h1>d</h1></button>
+
+</div>
+  <br><br><h4>Welcome to Thailand!</h4> 
+</div>
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="bs.html" data-toggle="tooltip" title="กลับไปยังหน้าแรก">หน้าแรก</a></li>
+<li class="breadcrumb-item"><a href="bs_2.html" data-toggle="tooltip" title="Italy">อิตาลี</a></li>
+<li class="breadcrumb-item active">OMG</li><br>
+</ul>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner" align="center">
+    <div class="carousel-item active">
+      <img src="img/t1.jpg" alt="thai1" width="300" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="img/t2.jpg" alt="thai2" width="300" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="img/t3.jpg" alt="thai3" width="300" height="300">
+    </div>
+  </div>
+  
+ 
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<div class="alert alert-info">
+    <strong>ประเทศไทย</strong>  มีชื่ออย่างเป็นทางราชการว่า ราชอาณาจักรไทย เป็นรัฐชาติอันตั้งอยู่บนคาบสมุทรอินโดจีนและมลายู ในภูมิภาคเอเชียตะวันออกเฉียงใต้ มีพรมแดนด้านตะวันออกติดประเทศลาวและประเทศกัมพูชา ทิศใต้เป็นแดนต่อแดนประเทศมาเลเซียและอ่าวไทย ทิศตะวันตกติดทะเลอันดามันและประเทศพม่า และทิศเหนือติดประเทศพม่าและลาว มีแม่น้ำโขงกั้นเป็นบางช่วง มีศูนย์กลางการบริหารราชการแผ่นดินอยู่ที่กรุงเทพมหานคร และการปกครองส่วนภูมิภาค จัดระเบียบเป็น 76 จังหวัด[ก] แม้จะมีการสถาปนาระบอบราชาธิปไตยภายใต้รัฐธรรมนูญและประชาธิปไตยระบบรัฐสภาใน พ.ศ. 2475 แต่กองทัพไทยและตำรวจไทยยังมีบทบาทในการเมืองไทย ล่าสุด เกิดรัฐประหารเมื่อวันที่ 22 พฤษภาคม พ.ศ. 2557 และประเทศไทยปกครองแบบเผด็จการทหาร
+  </div>
+
+
+
+</body>
+
+<ul class="pagination" align="center">
+    <li class="page-item"><a class="page-link" href="bs.html">หน้าแรก</a></li>
+    <li class="page-item"><a class="page-link" href="bs_1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="bs_2.html">2</a></li>
+    <li class="page-item active"><a class="page-link" href="bs_3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="bs.html">Next</a></li>
+  </ul>
+</html>
