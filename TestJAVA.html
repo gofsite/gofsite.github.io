@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>TestJAVA</title>
+<style>
+ body{
+	background-color:#ffcccc;
+	}
+div{
+      background-color:#ff9999;	   
+      box-shadow: 5px 5px 5px grey;
+	}
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h1 {
+    color:#ffffcc;
+    text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+
+
+<body>
+
+<h1 align="center">การใช้จาวาสคริป JAVAScript</h1>
+
+
+<div align="center">
+  <h2>1.อาร์เรย์ เรียงตามตัวอักษร</h2>
+  <button onclick="myFunction()">คลิกเพื่อเรียง!</button>
+  <p id="veri"></p>
+  <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango","Durian","Strawberry","Watermelon"];
+  document.getElementById("veri").innerHTML = fruits;
+  function myFunction() {
+    fruits.sort();
+    document.getElementById("veri").innerHTML = fruits;
+	}
+  </script>
+</div>
+
+<div align="center">
+<h2>2.แรนด้อมตัวเลข</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.random();
+</script>
+</div>
+
+<div align="center">
+<h2>สามารถบอกขนาดหน้าจอของเราได้</h2>
+<p id="zise"></p>
+<script>
+document.getElementById("zise").innerHTML = 
+"Screen width is " + screen.width;
+</script>
+</div>
+
+<div align="center">
+<h2>4.บอกวันปัจจุบัน</h2>
+<p id="dem2"></p>
+<script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+}
+document.getElementById("dem2").innerHTML = "Today is " + day;
+</script>
+</div>
+
+<div align="center">
+<h2>5.นำตัวเลขมาบวกกับตัวหนังสือ</h2>
+<p id="nam"></p>
+<script>
+var x = 100 + "Onehundred";
+document.getElementById("nam").innerHTML = x;
+</script>
+</div>
+
+<div align="center">
+<h2>6.บอกวัน เดือน ปี เวลา</h2>
+<button onclick="document.getElementById('tam').innerHTML=Date()">คลิก!</button>
+<p id="tam"></p>
+</div>
+
+<div align="center">
+<h2>7.คำนวณค่าที่ถูกต้อง</h2>
+<p>การใช้(=)และ(==)จะทำให้ค่าผิดเพี้ยนได้</p>
+<p>เช่น x=0และ x==0 </p>
+<p id="tuu"></p>
+<script>
+var x = 0;
+document.getElementById("tuu").innerHTML = Boolean(x == 10);
+</script>
+
+<h2>8.คลิกเปลี่ยนรูปภาพได้</h2>
+<button onclick="document.getElementById('myImage').src='http://download.seaicons.com/icons/iconsmind/outline/512/Smile-icon.png'">ยิ้ม</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='https://cdn.pixabay.com/photo/2014/04/02/10/38/smiley-304070_960_720.png'">เศร้า</button>
+</div>
+
+
+
+<div align="center">
+<h2>9.ซ่อนข้อมูล</h2>
+<p id="cos"><img src="http://image.dek-d.com/27/0406/4374/118146662" width="450" height="450"></p>
+<button type="button" onclick="document.getElementById('cos').style.display='none'">ซ่อน!</button>
+</div>
+
+<div align="center">
+<h2>10.แสดงเนื้อหาที่ซ่อนอยู่</h2>
+<p id="opem" style="display:none"><img src="http://www.veggiestoday.com/images/column_1309244427/%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1(3).jpg" width="500" height="330"></p>
+<button type="button" onclick="document.getElementById('opem').style.display='block'">ชมภาพ!</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
