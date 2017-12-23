@@ -1,0 +1,224 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JAVA Advanc Jasada</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+h2 {
+    color: #ffffcc;
+    text-shadow: 2px 2px 4px #000000;
+}
+h1 {
+    color:#ffffcc;
+    text-shadow: 2px 2px 4px #000000;
+}
+body {
+  background-color:#ffcccc;	
+  margin: 0;
+}
+.header {
+     background-image: url(https://images7.alphacoders.com/411/thumb-1920-411820.jpg);
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #666666;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ff66cc;
+    color: black;
+}
+.footer {
+    background-image: url(https://wallpaperscraft.com/image/tree_fog_nature_beautiful_84257_1280x800.jpg);
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("กรุณากรอกชื่อด้วยค่ะ");
+        return false;
+    }
+}
+
+</script>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>เทคนิค JAVA Script</h1>
+</div>
+
+<div class="topnav"> 
+  <a href ="https://www.facebook.com">Facebook</a>
+  <a href="https://www.google.co.th/">Google</a>
+  <a href="https://gofsite.github.io/">Gofsite</a>
+</div><br>
+
+
+
+
+
+
+<h2>1.JSForms</h2>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+ชื่อ: <input type="text" name="fname">
+<input type="submit" value="ยืนยัน">
+</form>
+<br>
+
+
+
+
+
+
+<h2>2.JS Objects </h2>
+<p>ด้วยฟังก์ชันตัวสร้างคุณสามารถใช้ คำหลักใหม่เพื่อสร้างวัตถุใหม่จากต้นแบบเดียวกันได้</p>
+<p>การตั้งชื่อฟังก์ชันตัวสร้างด้วยตัวอักษรตัวแรกที่พิมพ์ใหญ่</p>
+<p id="FaMa"></p>
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+document.getElementById("FaMa").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age; 
+</script>
+<br>
+
+
+
+
+
+<h2>3.DOM CSS</h2>
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<script>
+document.getElementById("p2").style.color = "blue";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+</script>
+<p>ย่อหน้าข้างต้นมีการเปลี่ยนแปลงโดยสคริปต์</p>
+<br>
+
+
+
+
+
+<h2>4.DOM Navigation</h2>
+<p>เรียกค้นข้อความขององค์ประกอบ (h1) และคัดลอกลงในองค์ประกอบ (p):</p>
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+</script>
+<br>
+
+
+
+
+
+<h2>5.DOM Collection</h2>
+<p>เปลี่ยนสีอักษร</p>
+<i id="id2">Hello Norway!</i><br><br>
+<button class="button3" onclick="document.getElementById('id2').style.color='blue'">เปลี่ยนสี!</button><br>
+
+
+
+
+
+
+
+<h2>6.JS Functions</h2>
+<p>คำนวณหาค่ามากที่สุดทางคณิตศาสตร์</p>
+<p>1,2,3</p>
+<p id="matt"></p>
+
+<script>
+document.getElementById("matt").innerHTML = Math.max(1,2,3); 
+</script>
+
+
+
+
+
+<h2>7.Function Closures</h2>
+
+<p>คำนวณค่าของตัวแปร</p>
+<p id="odin"></p>
+
+<script>
+var x = function (a, b) {return a * b};
+document.getElementById("odin").innerHTML = x(10, 11);
+</script>
+
+
+
+
+
+
+
+
+<h2>8.JS Browser BOM </h2>
+<p>กดปุ่ม คลิ๊ก จะแสดงคุกกี้เด้งขึ้นมา </p>
+
+<button onclick="myFunction()">คลิ๊ก!</button>
+
+<p id="sabaidee"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("สบายดีบ่!") == true) {
+        txt = "สบายดี จร้าา!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("sabaidee").innerHTML = txt;
+}
+</script>
+
+
+
+
+<h2>9.JS AJAX</h2>
+
+
+<h2>10.JS JSON </h2>
+
+
+
+
+
+
+
+
+
+</body>
+<div class="footer">
+  <p><h2>Jasada pornprasit</h2><a href="https://www.w3schools.com"><h2>w3schools</h2></a></p>
+</div>
+</html>
