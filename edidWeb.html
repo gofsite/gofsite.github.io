@@ -1,0 +1,363 @@
+
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แก้โค้ดBy Jesada</title>
+<link rel="stylesheet" type="text/css" href="/trystyle.css" />
+
+<style>
+body {
+ line-height:15px;
+}
+
+h1 {
+ line-height:34px;
+ margin-bottom:0px;
+ margin-top:10px;
+}
+#iframeResult
+{
+font-family:Arial;
+}
+#iframeResult * :not(.noSel)
+{
+border:1px solid transparent;
+}
+#iframeResult span.markup
+{
+color:#aaaaaa;
+font-size:12px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight:normal;
+}
+
+#selectorOptions div {
+ font-family:"Courier New", Courier, monospace;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-size:14px; 
+ line-height:16px;
+ cursor:pointer;
+}
+#selectorOptions div:hover {
+ background-color:#f1f1f1;
+}
+#content, #footer {
+ background-color:#f1f1f1;
+}
+#content {
+ border-top:none;
+}
+.headerText, #footer {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+ color:#222222;
+}
+#selectorDescription {
+ padding:10px;
+ display:none;
+ width:225px;
+ background-color:#f1f1f1;
+ border:1px solid #d3d3d3;
+ border-radius:5px;
+ position:fixed;
+ top:150px;
+ left:230px;
+ text-align:center;
+ font-family:Verdana;
+ font-size:12px;
+}
+.smalldevice {
+ display:none;
+}
+@media screen and (max-width: 1160px)  {
+    .smalldevice {
+     display:inline;
+    }
+    .largedevice {
+     display:none;
+    }
+}
+@media screen and (max-width: 950px)  {
+ #selectorDescription {
+  left:200px;
+      width:150px;
+ }
+}
+@media only screen and (max-width: 768px) {
+    #textareaCode {
+        padding:5px;
+    }
+    .iframewrapper {
+        overflow: auto;
+    }
+    .container {
+     min-width:320px;
+    }
+    .textarea, .iframe {
+        height:97%;
+    }
+    .textareacontainer, .iframecontainer {
+        height:50%;
+        float:none;
+        width:98%;
+    }
+    .textarea, .iframe {
+        height:97%;
+        padding:15px;            
+    }
+ .textareacontainer {
+     height:300px;
+ }
+ 
+ .container {
+     bottom:initial;
+     height:initial;
+     min-width:250px;
+ }
+ #selectorDescription {
+  width:40%;
+  position:absolute;
+  top:55px;
+  left:initial;
+  right:10%;
+ }
+}
+@media screen and (max-height: 700px) {
+    .footerText {
+     display:none;
+    }
+}
+</style>
+<style>
+h5 {
+    border: 1px solid black;
+    background-color: #fff5dd;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h4").on({
+        mouseenter: function(){
+            $(this).css("background-color", "#ffc268");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "#5ef2dc");
+        }, 
+        click: function(){
+            $(this).css("background-color", "#a4e069");
+        }  
+    });
+});
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#ffd491");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("div").hide(1500);
+    });
+});
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+    $("#tog").click(function(){
+        $("i").toggle();
+    });
+});
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+    $("#fade").click(function(){
+        $("div2").fadeToggle("slow");
+    });
+});
+</script>
+
+
+
+
+
+
+</head>
+<body onLoad="w3jQuerySelectorLoad();">
+<div id='tryitLeaderboard'>
+<!-- TryitLeaderboard -->
+  <div id='div-gpt-ad-1428407818244-0'>
+    <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428407818244-0'); });</script>
+  </div>
+</div>
+
+      <div class="iframewrapper">
+        <div id="iframeResult" class="result_output" style="overflow:auto;">
+        
+        
+       <div id="selectorResult" style="padding:5px;" class="noSel">
+       <div class="noSel">
+<h4><span class="markup">&lt;h1&gt;</span><font color="#f45887">เทคนิค 1 </font>Welcome to My Homepage<span class="markup">&lt;/h1&gt;</span></h4>
+<font color="#f45887">เทคนิค3</font><button id="button">ซ่อนเนื้อหาทั้งหมด</button>
+<div id="helpIntro">
+<font color="#f45887">เทคนิค4</font><button id="tog">ซ่อนและแสดงเนื้อหา(คลิกได้2ครั้ง)</button><br>
+<i class="markup">&lt;div class="intro"&gt;</i>
+<div class="intro">
+<i style="margin-top:4px;"><span class="markup">&lt;p&gt;</span>My name is Donald <span id="Lastname"><span class="markup">&lt;span id="Lastname"&gt;</span>Duck<span class="markup">&lt;/span&gt;</span></span><span class="markup">&lt;/p&gt;</span></i>
+<i id="my-Address"><span class="markup">&lt;p id="my-Address"&gt;</span>I live in Duckburg<span class="markup">&lt;/p&gt;</span></i>
+<br><i style="margin-bottom:4px;"><span class="markup">&lt;p&gt;</span>I have many friends:<span class="markup">&lt;/p&gt;</span></i>
+</div>
+<i class="markup">&lt;/div&gt;</i>
+</div>
+<font color="#f45887">เทคนิค5</font><button id="fade">ซ่อนเนื้อหาค่อยๆจาง</button>
+<br>
+<div2 class="helpUl">
+<div2 class="markup">&lt;ul id="Listfriends&gt;</div2>
+<ul id="Listfriends" style="margin-top:0px;margin-bottom:0px;">
+
+<li><div2 class="markup">&lt;li&gt;</span>Goofy<span class="markup">&lt;/li&gt;</div2></li>
+<li><div2 class="markup">&lt;li&gt;</span>Mickey<span class="markup">&lt;/li&gt;</div2></li>
+<li><div2 class="markup">&lt;li&gt;</span>Daisy<span class="markup">&lt;/li&gt;</div2></li>
+<li><div2 class="markup">&lt;li&gt;</span>Pluto<span class="markup">&lt;/li&gt;</div2></li>
+</ul>       
+<div2 class="markup">&lt;/ul&gt;</div2>
+</div2>
+<ul style="display:none;"></ul>
+
+<p><span class="markup">&lt;p&gt;</span>I really like Daisy!!<span class="markup">&lt;/p&gt;</span></p>
+
+<p lang="it" title="Hello beautiful"><span class="markup">&lt;p lang="it" title="Hello beautiful"&gt;</span>Ciao bella<span class="markup">&lt;/p&gt;</span></p>
+
+
+<h3><span class="markup">&lt;h3&gt;</span>We are all animals!<span class="markup">&lt;/h3&gt;</span></h3>
+
+<p><span class="markup">&lt;p&gt;</span><span><b><span class="markup">&lt;b&gt;</span>My latest discoveries has led me to believe that we are all animals:<span class="markup">&lt;/b&gt;</span></b></span><span class="markup">&lt;/p&gt;</span></p>
+
+<div class="helpTable" style="width:220px;">
+<span class="markup">&lt;table&gt;</span>
+<ul style="display:none;"></ul>
+
+<table cellpadding="2" cellspacing="2">
+<tr>
+<th style="background-color:#f1f1f1;">Name</th>
+<th style="background-color:#f1f1f1;">Type of Animal</th>
+</tr>
+<tr>
+<td style="background-color:#f1f1f1;">Mickey</td>
+<td style="background-color:#f1f1f1;">Mouse</td>
+</tr>
+<tr>
+<td style="background-color:#f1f1f1;">Goofey</td>
+<td style="background-color:#f1f1f1;">Dog</td>
+</tr>
+<tr>
+<td style="background-color:#f1f1f1;">Daisy</td>
+<td style="background-color:#f1f1f1;">Duck</td>
+</tr>
+<tr>
+<td style="background-color:#f1f1f1;">Pluto</td>
+<td style="background-color:#f1f1f1;">Dog</td>
+</tr>
+</table>
+<span class="markup">&lt;/table&gt;</span>
+</div>
+
+<div class="noSel newsletter" style="background-color:#fff1db;border:1px solid #d3b045;padding:10px;xfont-size:12px;">
+<form>
+ <h4>Subscribe to my newsletter:</h4>
+ <div style="overflow:auto;">
+  <div style="width:100px;float:left;">Name:</div><div style="width:180px;float:left;"><font color="#f45887">เทคนิค2</font><input type="text" name="fullname" style="width:150px" class="markup" /></div>
+    </div>
+ <div style="overflow:auto;">
+  <div style="width:100px;float:left;">E-mail:</div><div style="width:180px;float:left;"><input type="text" name="email" style="width:150px" class="markup" /></div>
+    </div>
+ <div style="overflow:auto;">
+  <div style="width:100px;float:left;">Password:</div><div style="width:180px;float:left;"><input type="password" style="width:150px" name="password" value="password" /></div>
+    </div>
+    Female: <input name="rr" type="radio" id="rr1" checked="checked" style="outline:2px solid transparent"/>
+ Male: <input name="rr" type="radio" id="rr2" style="outline:2px solid transparent" />
+ Other: <input name="rr" type="radio" id="rr3" disabled="disabled" style="outline:2px solid transparent" />  
+ <div style="overflow:auto;">
+  <h4>Newscategories:</h4>
+  <div style="width:70px;float:left;">Ducks:</div><div style="width:20px;float:left;"><input id="cc1" type="checkbox" checked="checked" style="outline:2px solid transparent" /></div>
+    </div>
+ <div style="overflow:auto;">
+  <div style="width:70px;float:left;">Dogs:</div><div style="width:20px;float:left;"><input id="cc2" type="checkbox" style="outline:2px solid transparent" /></div>
+    </div>
+ <div style="overflow:auto;">
+  <div style="width:70px;float:left;">Humans:</div><div style="width:20px;float:left;"><input id="cc3" type="checkbox" style="outline:2px solid transparent" /></div>
+ </div>
+ <div class="noSel" style="clear:both;"></div>   
+ <input class="noSel" type="reset" value="Reset" style="outline:2px solid transparent" />
+ <input class="noSel" type="submit" value="Submit" style="outline:2px solid transparent" /> 
+ <input class="noSel" type="button" value="Cancel" style="outline:2px solid transparent" />
+ <h4>My Favourite:</h4>
+ <select multiple class="myselect">
+  <option>---Cartoon---</option>
+  <option selected>Dargonball Z</option>
+  <option>Naruto</option>
+  <option>Onepiece</option> 
+  <option>Bleach</option>
+  <option>Pokemon</option>
+  <option>Doraemon</option>      
+ </select>
+ <h4>Upload image:</h4>
+ <input type="file">
+ <input type="image" src="arrow-r.jpg" style="border:3px solid transparent">
+</form>
+</div>
+
+<br>
+
+
+
+
+       </div>
+
+  </div>
+        
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerText">Click the jQuery Selectors and see the specified element(s) get selected. &copy; <a href="https://www.w3schools.com">w3schools.com</a></div>      
+</div>
+
+<h3><font color="#f45887">อธิบายเทคนิคต่างๆ</h3><p>
+
+<h5><font color="#f45887">เทคนิค 1 "กำหนดแท็ก h4 ในฟังก์ชัน ใช้เม้าส์คลิกหรือชี้เมาส์ไปที่ย่อหน้า จะมีสีพื้นหลังตัวอักษร"</font>
+  <p><font color="#f45887">เทคนิค 2 "เป็นการกำหนดสีพื้นหลังของ text โดยใช้ css หลังจากที่เลื่อนผ่าน text"</font>
+<p><font color="#f45887">เทคนิค 3 "ใช้ฟังก์ชั่น effect hide ในการซ่อนเนื้อหาทั้งหมด"</font>
+<p><font color="#f45887">เทคนิค 4 "ใชฟังชั่น toggle ในการซ่อนและแสดงเนื้อหา โดยการคลิกที่ปุ่ม ซ่อนและแสดงเนื้อหา"</font>
+<p><font color="#f45887">เทคนิค 5 "ใช้ฟังก์ชั่น fade ในการซ่อนเนื้อหาแบบค่อยๆจางหายไป "</font>                                                                  
+</h5><br><br>
+
+</body>
+</html>
