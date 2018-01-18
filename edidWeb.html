@@ -1,4 +1,6 @@
 
+
+
 <html lang="en-US">
 <head>
 <meta name="viewport" content="width=device-width">
@@ -138,6 +140,22 @@ h5 {
     padding-bottom: 50px;
     padding-left: 80px;
 }
+ 
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: left;
+    background-color: #a4da65;
+    color: #3a1b0f;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
 </style>
 
 
@@ -204,7 +222,60 @@ $(document).ready(function(){
 
 
 
+<script> 
+$(document).ready(function(){
+    $("#anime").click(function(){
+        $("div1").animate({
+            left: '10px',
+            height: '+=10px',
+            width: '+=100px'
+        });
+    });
+});
+</script> 
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown(2000);
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hid").click(function(){
+        $("div4").hide("slow", function(){
+            alert("จัดเก็บเนื้อหาเรียบร้อย หมายเหตุ กดตกลง3ครั้ง!");
+        });
+    });
+});
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#le").click(function(){
+        $("#muf").empty();
+    });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h4").click(function(){
+        $(this).hide();
+    });
+});
+</script>
 
 
 </head>
@@ -249,45 +320,49 @@ $(document).ready(function(){
 </div2>
 <ul style="display:none;"></ul>
 
-<p><span class="markup">&lt;p&gt;</span>I really like Daisy!!<span class="markup">&lt;/p&gt;</span></p>
+<p><font color="#f45887">เทคนิค6</font><button id="anime">อนิเมชั่น</button>
+<p>
+<div1 style="background:#98bf21;height:100px;width:100px;position:absolute;">
+<span class="markup">&lt;p&gt;</span>I really like Daisy!!<span class="markup">&lt;/p&gt;</span></p>
+</div1><br><br><br><p><p>
 
-<p lang="it" title="Hello beautiful"><span class="markup">&lt;p lang="it" title="Hello beautiful"&gt;</span>Ciao bella<span class="markup">&lt;/p&gt;</span></p>
+<p><font color="#f45887">เทคนิค7</font><button id="hid">จัดเก็บ</button>
+<p><div4><span class="markup">&lt;p lang="it" title="Hello beautiful"&gt;</span>Ciao bella<span class="markup">&lt;/p&gt;</span></div4>
+<p><div4><span class="markup">&lt;h3&gt;</span>We are all animals!<span class="markup">&lt;/h3&gt;</span></div4>
+<p><div4><span class="markup">&lt;p&gt;</span><span><b><span class="markup">&lt;b&gt;</span>My latest discoveries has led me to believe that we are all animals:<span class="markup">&lt;/b&gt;</span></b></span><span class="markup">&lt;/p&gt;</span></div4>
 
 
-<h3><span class="markup">&lt;h3&gt;</span>We are all animals!<span class="markup">&lt;/h3&gt;</span></h3>
-
-<p><span class="markup">&lt;p&gt;</span><span><b><span class="markup">&lt;b&gt;</span>My latest discoveries has led me to believe that we are all animals:<span class="markup">&lt;/b&gt;</span></b></span><span class="markup">&lt;/p&gt;</span></p>
-
+<p><font color="#f45887">เทคนิค9</font><button id="le">ลบข้อความ!</button>
 <div class="helpTable" style="width:220px;">
 <span class="markup">&lt;table&gt;</span>
 <ul style="display:none;"></ul>
 
 <table cellpadding="2" cellspacing="2">
 <tr>
-<th style="background-color:#f1f1f1;">Name</th>
-<th style="background-color:#f1f1f1;">Type of Animal</th>
+<th id="muf" style="background-color:#55bed7;">Name</th>
+<th style="background-color:#55bed7;">Type of Animal</th>
 </tr>
 <tr>
-<td style="background-color:#f1f1f1;">Mickey</td>
-<td style="background-color:#f1f1f1;">Mouse</td>
+<td style="background-color:#55bed7;">Mickey</td>
+<td style="background-color:#55bed7;">Mouse</td>
 </tr>
 <tr>
-<td style="background-color:#f1f1f1;">Goofey</td>
-<td style="background-color:#f1f1f1;">Dog</td>
+<td style="background-color:#55bed7;">Goofey</td>
+<td style="background-color:#55bed7;">Dog</td>
 </tr>
 <tr>
-<td style="background-color:#f1f1f1;">Daisy</td>
-<td style="background-color:#f1f1f1;">Duck</td>
+<td style="background-color:#55bed7;">Daisy</td>
+<td style="background-color:#55bed7;">Duck</td>
 </tr>
 <tr>
-<td style="background-color:#f1f1f1;">Pluto</td>
-<td style="background-color:#f1f1f1;">Dog</td>
+<td style="background-color:#55bed7;">Pluto</td>
+<td style="background-color:#55bed7;">Dog</td>
 </tr>
 </table>
 <span class="markup">&lt;/table&gt;</span>
 </div>
 
-<div class="noSel newsletter" style="background-color:#fff1db;border:1px solid #d3b045;padding:10px;xfont-size:12px;">
+<div class="noSel newsletter" style="background-color:#bfe8ac;border:1px solid #d3b045;padding:10px;xfont-size:12px;">
 <form>
  <h4>Subscribe to my newsletter:</h4>
  <div style="overflow:auto;">
@@ -303,7 +378,7 @@ $(document).ready(function(){
  Male: <input name="rr" type="radio" id="rr2" style="outline:2px solid transparent" />
  Other: <input name="rr" type="radio" id="rr3" disabled="disabled" style="outline:2px solid transparent" />  
  <div style="overflow:auto;">
-  <h4>Newscategories:</h4>
+  <p><font color="#f45887">เทคนิค10 คลิกหัวข้อ</font><h4>Newscategories:</h4>
   <div style="width:70px;float:left;">Ducks:</div><div style="width:20px;float:left;"><input id="cc1" type="checkbox" checked="checked" style="outline:2px solid transparent" /></div>
     </div>
  <div style="overflow:auto;">
@@ -316,7 +391,7 @@ $(document).ready(function(){
  <input class="noSel" type="reset" value="Reset" style="outline:2px solid transparent" />
  <input class="noSel" type="submit" value="Submit" style="outline:2px solid transparent" /> 
  <input class="noSel" type="button" value="Cancel" style="outline:2px solid transparent" />
- <h4>My Favourite:</h4>
+ <p><font color="#f45887">เทคนิค10 คลิกหัวข้อ</font><h4>My Favourite:</h4>
  <select multiple class="myselect">
   <option>---Cartoon---</option>
   <option selected>Dargonball Z</option>
@@ -326,7 +401,7 @@ $(document).ready(function(){
   <option>Pokemon</option>
   <option>Doraemon</option>      
  </select>
- <h4>Upload image:</h4>
+ <p><font color="#f45887">เทคนิค10 คลิกหัวข้อ</font><h4>Upload image:</h4>
  <input type="file">
  <input type="image" src="arrow-r.jpg" style="border:3px solid transparent">
 </form>
@@ -349,15 +424,20 @@ $(document).ready(function(){
   </div>
   <div class="footerText">Click the jQuery Selectors and see the specified element(s) get selected. &copy; <a href="https://www.w3schools.com">w3schools.com</a></div>      
 </div>
-
-<h3><font color="#f45887">อธิบายเทคนิคต่างๆ</h3><p>
-
-<h5><font color="#f45887">เทคนิค 1 "กำหนดแท็ก h4 ในฟังก์ชัน ใช้เม้าส์คลิกหรือชี้เมาส์ไปที่ย่อหน้า จะมีสีพื้นหลังตัวอักษร"</font>
-  <p><font color="#f45887">เทคนิค 2 "เป็นการกำหนดสีพื้นหลังของ text โดยใช้ css หลังจากที่เลื่อนผ่าน text"</font>
-<p><font color="#f45887">เทคนิค 3 "ใช้ฟังก์ชั่น effect hide ในการซ่อนเนื้อหาทั้งหมด"</font>
-<p><font color="#f45887">เทคนิค 4 "ใชฟังชั่น toggle ในการซ่อนและแสดงเนื้อหา โดยการคลิกที่ปุ่ม ซ่อนและแสดงเนื้อหา"</font>
-<p><font color="#f45887">เทคนิค 5 "ใช้ฟังก์ชั่น fade ในการซ่อนเนื้อหาแบบค่อยๆจางหายไป "</font>                                                                  
-</h5><br><br>
+<p>
+<div id="flip"><font color="#f45887">เทคนิค8</font>กดเลื่อนดูคำอธิบายเทคนิคต่างๆ</div>
+<div id="panel">
+   เทคนิค 1 "กำหนดแท็ก h4 ในฟังก์ชัน ใช้เม้าส์คลิกหรือชี้เมาส์ไปที่ย่อหน้า จะมีสีพื้นหลังตัวอักษร"
+<p>เทคนิค 2 "เป็นการกำหนดสีพื้นหลังของ text โดยใช้ css หลังจากที่เลื่อนผ่าน text"
+<p>เทคนิค 3 "ใช้ฟังก์ชั่น effect hide ในการซ่อนเนื้อหาทั้งหมด"
+<p>เทคนิค 4 "ใชฟังชั่น toggle ในการซ่อนและแสดงเนื้อหา โดยการคลิกที่ปุ่ม ซ่อนและแสดงเนื้อหา"
+<p>เทคนิค 5 "ใช้ฟังก์ชั่น fade ในการซ่อนเนื้อหาแบบค่อยๆจางหายไป "
+<p>เทคนิค 6 "ใช้ฟังก์ชั่น animate ทำให้กรอบของtext เคลื่อนไหวได้เพิ่มความน่าสนใจ "
+<p>เทคนิค 7 "ใช้ฟังก์ชั่น callback ในการจัดเก็บหรือซ่อนข้อความ"
+<p>เทคนิค 8 "ใช้ฟังก์ชั่น stop slide เพื่อให้ประหยัดพื้นที่ของเว็บและมีลูกเล่นในการคลิกเลื่อนลง "
+<p>เทคนิค 9 "ใช้ฟังก์ชั่น Elements to be Removed เพื่อลบข้อความออกจากตาราง "
+<p>เทคนิค 10 "ใช้ฟังก์ชั่น Events คำสั่ง hide เพื่อซ่อนหัวข้อหลัก"
+</div>
 
 </body>
 </html>
