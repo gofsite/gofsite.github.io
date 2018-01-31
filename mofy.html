@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX_jasada</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="alert alert-warning">
+<h1 class="text-danger">หมายเหตุ!</h1>
+<p>เนื้อหาอาจไม่สมบูรณ์แบบ เพราะยังไม่เข้าใจในXML ครับ</p>
+</div>
+<div class="alert alert-success">
+<h1>1. TheXMLHttpRequest Object</h1>
+</div>
+<div class="alert alert-info">
+<h3>เริ่มพิมพ์ชื่อในช่องป้อนข้อมูลด้านล่าง</h3>
+
+<form action=""> 
+ชื่อจริง <input type="text" id="txt1" onkeyup="showHint(this.value)">
+</form>
+
+<p>ข้อเสนอแนะ: <span id="txtHint"></span></p> 
+</div>
+<script>
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "gethint.asp?q="+str, true);
+  xhttp.send();
+}
+</script>
+
+<div class="alert alert-success">
+<h1>2. XML DOM</h1>
+</div>
+<img src="img/n1.gif">
+
+<div class="alert alert-success">
+<h1>3.XPath Operators</h1>
+</div>
+<p>ด้านล่างนี้คือรายการของโอเปอเรเตอร์ที่สามารถใช้ในนิพจน์ XPath</p>
+<img src="img/n2.jpg">
+
+<div class="alert alert-success">
+<h1>4. XML XSLT</h1>
+</div>
+<div class="alert alert-info">
+<p>XSLT - ภาษาสำหรับการแปลงเอกสาร XML</p>
+<p>XPath - ภาษาสำหรับการนำทางในเอกสาร XML</p>
+<p>XSL-FO - ภาษาสำหรับจัดรูปแบบเอกสาร XML (ยกเลิกในปี 2013)</p>
+<p>XQuery - ภาษาสำหรับการสอบถามเอกสาร XML</p>
+<h3>XSLT คืออะไร?</h3>
+<p>XSLT ย่อมาจาก XSL Transformations</p>
+<p>XSLT เป็นส่วนที่สำคัญที่สุดของ XSL</p>
+<p>XSLT ใช้ XPath เพื่อนำทางในเอกสาร XML</p>
+</div>
+<div class="alert alert-success">
+<h1>5. กฎไวยากรณ์พื้นฐาน XQuery</h1>
+</div>
+<div class="alert alert-info">
+<p>XQuery เป็นตัวพิมพ์เล็กและใหญ่</p>
+<p>องค์ประกอบองค์ประกอบและตัวแปร XQuery ต้องเป็นชื่อ XML ที่ถูกต้อง</p>
+<p>ค่าสายอักขระ XQuery สามารถอยู่ในเครื่องหมายคำพูดเดี่ยวหรือสองคำ</p>
+<p>ตัวแปร XQuery กำหนดด้วย $ ตามด้วยชื่อเช่น $ bookstore</p>
+<p>ความคิดเห็น XQuery ถูกคั่นด้วย (: และ :) เช่น (: XQuery Comment :)</p>
+</div>
+</body>
+</html>
